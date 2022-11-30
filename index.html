@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fashion News</title>
+        <!-- Font Awesome  -->
+        <script src="https://kit.fontawesome.com/18ec12434b.js" crossorigin="anonymous"></script>
+        <!-- Tailwind Css -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        
+        <!-- Container  -->
+        <div class="w-10/12 m-auto">
+            <!---=======================================================
+             Header Area  START
+             =====================================================----->
+
+            <header>
+                <div class="navbar bg-base-100 border-bottom border-2">
+                    <div class="flex-1">
+                        <a class="md:font-bold text-blue-600 border-0 normal-case text-xl mr-3">Fashion</a>
+                        <a class="btn btn-primary bg-blue-600 border-0 normal-case text-xl">News</a>
+                    </div>
+                    <div class="flex-none">
+                        <div class="flex">
+                            <a class="md:font-bold text-blue-600 mr-5 border-0 normal-case text-xl ml-3">News <span>
+                                    <hr>
+                                </span></a>
+                            <a href="blog.html" class="text-gray-500 md:mr-5 border-0 normal-case text-xl">Blogs</a>
+                        </div>
+                        <div class="dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                                <div class="w-10 rounded-full">
+                                    <img src="img/Avatar.png" />
+                                </div>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                                <li>
+                                    <a class="justify-between">
+                                        Profile
+                                        <span class="badge">New</span>
+                                    </a>
+                                </li>
+                                <li><a>Settings</a></li>
+                                <li><a>Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- ============  Catergori Nave Area  start ===========  ---->
+                <div class="text-center mt-8">
+                    <ul id="all-menu"
+                        class="menu menu-horizontal  bg-blue-100 rounded-box text-xl font-semibold text-gray-500 flex justify-around flex-wrap">
+
+                    </ul>
+                </div>
+                <!--- ============  Catergori Nave Area  Finish ===========  ---->
+            </header>
+            <!--- ============  Header Area  FINISHED ===========  ---->
+
+
+            <!---=======================================================
+         Main Area  START
+         =====================================================----->
+
+            <main class="main_sec">
+                <!-------- alert  START ---------->
+
+                <section id="alert"
+                    class="alert mt-10 shadow-lg flex justify-center items-center align-center m-auto text-center">
+                </section>
+                <!-------- alert FINISHED ----------->
+
+                <!-------- sorting bar start ----------->
+                <section class="mt-10 shadow-lg flex justify-between items-center align-center m-auto bg-gray-100 py-4">
+                    <div class=" md:text-2xl text-xl font-medium md:font-bold md:ml-20">
+                        <h2>Sort By View : <span class="btn bg-white text-gray-400 border-0 rounded-none text-xl">Views
+                                <i class="fas fa-chevron-down ml-2"></i> </span></h2>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-primary"> Trending</button>
+                        <button class=" btn btn-outline"> Trending</button>
+                    </div>
+                </section>
+                <!-------- sorting bar finish ----------->
+
+
+                          <!-------- Spiner Container  START ---------->
+                <div class="flex justify-center items-center align-center m-auto">
+                    <div id="spiner"
+                        class="radial-progress bg-primary text-primary-content border-4 border-primary hidden"
+                        style="--value:70;">70%</div>
+                </div>
+           <!-------- spinar  finish ----------->
+
+
+                <!-------- Card Container  START ---------->
+                <div id="card_container" class=" mt-20">
+                    <div class="col">
+
+                    </div>
+                </div>
+                <!-------- Card Container FINISHED ----------->
+            </main>
+            <!--- ============  Main Area  FINISHED ===========  ---->
+
+
+
+            <!-------- Footer  START ---------->
+            <footer class="text-center font-bold text-gray-500 my-20 bg-white"> Copyright &copy; 2022 Fashion News | All
+                Right Reserved Md Rafiqul Islam</footer>
+
+            <!-------- Footer FINISHED ----------->
+        </div>
+
+
+
+
+
+
+        <!-- The button to open modal -->
+
+
+        <!-- Put this part before </body> tag -->
+        <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+        <div class="modal" id="modal_container">
+
+        </div>
+
+
+
+
+
+        <!-- Custom JS -->
+        <script src="js/index.js"></script>
+    </body>
+
+</html>

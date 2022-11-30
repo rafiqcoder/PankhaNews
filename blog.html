@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fashion News</title>
+        <!-- Font Awesome  -->
+        <script src="https://kit.fontawesome.com/18ec12434b.js" crossorigin="anonymous"></script>
+        <!-- Tailwind Css -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+
+    </head>
+
+    <body>
+        <script> document.getElementById('spiner').classList.remove('hidden');</script>
+        <div class="w-10/12 m-auto">
+            <!---=======================================================
+                   Header Area  START
+            =====================================================----->
+            <header>
+                <div class="navbar bg-base-100 border-bottom border-2 position-fixed top-0">
+                    <div class="flex-1">
+                        <a class="font-bold text-blue-600 border-0 normal-case text-xl mr-3">Fashion</a>
+                        <a href="index.html" class="btn btn-primary bg-blue-600 border-0 normal-case text-xl">News</a>
+                    </div>
+                    <div class="flex-none">
+                        <div class="flex">
+                            <a href="index.html" class="text-gray-500 mr-5 border-0 normal-case text-xl ml-3">News
+                                <span>
+                                    <hr>
+                                </span></a>
+                            <a class="text-blue-600 mr-5 border-0 normal-case text-xl font-bold">Blogs</a>
+                        </div>
+                        <div class="dropdown dropdown-end">
+                            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                                <div class="w-10 rounded-full">
+                                    <img src="img/Avatar.png" />
+                                </div>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                                <li>
+                                    <a class="justify-between">
+                                        Profile
+                                        <span class="badge">New</span>
+                                    </a>
+                                </li>
+                                <li><a>Settings</a></li>
+                                <li><a>Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <!--- ============  Header Area  FINISHED ===========  ---->
+            <!---=======================================================
+                      Main Area  START
+         =====================================================----->
+
+            <main class="main_sec">
+
+                <!---=======================================================   
+                      BlogArea  START  
+         =====================================================----->
+
+                <aside class="blog md:w-9/12 m-auto mt-40">
+                    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-2xl font-semibold bg-blue-400 text-black">
+                            What are the defferences Between Var,Let & Constant
+                        </div>
+                        <div class="collapse-content  bg-blue-100 text-2xl  md:pr-80 text-black">
+                            <p>The scope of a var variable is functional scope, the scope of a let variable is block
+                                scope,
+                                the scope of a const variable is block scope. Var can be updated and redeclared in
+                                scope,
+                                Let can be updated but not redeclared in scope, Constant cannot be updated or redeclared
+                                in
+                                scope.</p>
+                        </div>
+                    </div>
+                    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-2xl font-semibold bg-blue-400 text-black">
+                            What are the defferences Between Arrow Functions & Regular Functions?
+                        </div>
+                        <div class="collapse-content  bg-blue-100 text-2xl md:pr-80 text-black">
+                            <p>Arrow functions Unlike regular functions, arrow functions do not have (this). Its value
+                                inside an arrow function remains the same throughout the function's lifecycle and is
+                                always
+                                bound to its value in the nearest non-arrow parent function.</p>
+                        </div>
+                    </div>
+                    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-2xl font-semibold bg-blue-400 text-black">
+                            What are the defferences Between map,forEach,filter and find?
+                        </div>
+                        <div class="collapse-content  bg-blue-100 text-2xl md:pr-80 text-black">
+                            <p>
+                                <li> takes a callback function and run that callback function on each element of array
+                                    one
+                                    by one.</li>
+                                <li> The main difference between forEach and filter is that forEach just loop over the
+                                    array
+                                    and executes the callback but filter executes the callback and check its return
+                                    value.
+                                </li>
+                                <li> Map like filter & foreach takes a callback and run it against every element on the
+                                    array but whats makes it unique is it generate a new array based on your existing
+                                    array.
+                                </li>
+                                <li> The find() method returns the value of the first element that passes a test. The
+                                    find()
+                                    method executes a function for each array element. The find() method returns
+                                    undefined
+                                    if no elements are found.</li>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div tabindex="0" class="collapse collapse-open border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-2xl font-semibold bg-blue-400 text-black">
+                            Why Do We Use Template Strings?
+                        </div>
+                        <div class="collapse-content  bg-blue-100 text-2xl md:pr-80 text-black">
+                            <p>Template strings are a powerful feature of modern JavaScript released in ES6. This allows
+                                us
+                                to insert or interpolate variables and expressions into strings without the need for
+                                concatenation like in older versions of JavaScript. This allows us to create strings
+                                that
+                                contain complex and dynamic elements.</p>
+                        </div>
+                    </div>
+
+                </aside>
+
+                <!--- ============  BlogArea FINISHED ===========  ---->
+
+            </main>
+
+            <!--- ============  Main Area  FINISHED ===========  ---->
+
+            <!-------- Footer  START ---------->
+            <footer class="text-center font-bold text-gray-500 my-20 bg-white"> Copyright &copy; 2022 Fashion News | All
+                Right Reserved Md Rafiqul Islam</footer>
+
+            <!-------- Footer FINISHED ----------->
+        </div>
+
+
+
+
+
+
+
+        <!-------- Spiner Container  START ---------->
+        <div class="flex justify-center items-center align-center m-auto">
+            <div id="spiner" class="radial-progress bg-primary text-primary-content border-4 border-primary hidden"
+                style="--value:70;">70%</div>
+        </div>
+        <!-------- spinar  finish ----------->
+
+
+
+
+
+
+        <!-- <script src="js/index.js"></script> -->
+        <script>document.getElementById('spiner').classList.add('hidden');</script>
+    </body>
+
+</html>
